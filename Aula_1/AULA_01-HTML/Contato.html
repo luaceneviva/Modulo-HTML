@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <main>
+        <form method="get">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{2}-[0-9]{5]-[0-9]{4}">
+            </div>
+            <div>
+                <label for="sport">Seu esporte favorito</label>
+                <select name="sport" id="sport">
+                    <option value="" disabled selected>Selecionar</option>
+                    <optgroup label="Com bola">
+                        <option>Futebol</option>
+                        <option>Basquete</option>
+                        <option>Volei</option>
+                    </optgroup>
+                    <optgroup label="Sem bola">
+                        <option>Natação</option>
+                        <option>Corrida</option>
+                        <option>Lutas</option>
+                    </optgroup>
+                    <option>Outro</option>
+                </select>
+            </div>
+            <div>
+                <label for="sex">Selecione seu gênero:</label> <br>
+                <input type="radio" name="sex" id="sex" value="masculine"> Masculino
+                <br>
+                <input type="radio" name="sex" id="sex" value="feminine"> Feminino
+                <br>
+                <input type="radio" name="sex" id="sex" value="other"> Outro
+            </div>
+            <div>
+                <label for="terms">Aceita os termos?</label>
+                <input type="checkbox" id="terms" name="acept"> Aceito
+            </div>
+            <div>
+                <label for="description">Motivo do contato:</label> <br>
+                <textarea id="description" name="description"></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
